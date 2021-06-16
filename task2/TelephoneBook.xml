@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MyContacts>
+    <Contact>
+        <Name>Name 1</Name>
+        <TelephoneNumber>1111111</TelephoneNumber>
+    </Contact>
+    <Contact>
+        <Name>Name 2</Name>
+        <TelephoneNumber>1111111</TelephoneNumber>
+    </Contact>
+    <Contact>
+        <Name>Name 3</Name>
+        <TelephoneNumber>1111111</TelephoneNumber>
+    </Contact>
+</MyContacts>

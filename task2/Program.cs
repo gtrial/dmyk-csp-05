@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml;
 
 namespace task2
 {
@@ -6,7 +7,12 @@ namespace task2
     {
         private static void Main()
         {
-            Console.WriteLine("Hello World!");
+            var document = new XmlDocument();
+            document.Load("../../../TelephoneBook.xml");
+            Console.WriteLine(document.Name);
+            Console.WriteLine(document.InnerText);
+            Console.WriteLine(document.InnerXml);
+            Console.WriteLine(document.IsReadOnly);
         }
     }
 }
