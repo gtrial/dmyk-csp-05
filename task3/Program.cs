@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.XPath;
 
 namespace task3
 {
@@ -6,7 +7,14 @@ namespace task3
     {
         private static void Main()
         {
-            Console.WriteLine("Hello World!");
+            var xPathDocument = new XPathDocument("../../../TelephoneBook.xml");
+            var xPathNavigator = xPathDocument.CreateNavigator();
+            if (xPathNavigator == null) return;
+            var xPathNodeIterator = xPathNavigator.Select("MyContacts/Contact/TelephoneNumber");
+            foreach (var item in xPathNodeIterator)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
